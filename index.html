@@ -1,53 +1,93 @@
-<html lang="en"><head>
+<html lang="en">
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>Jorge L Rojas</title>
-
-  
     <link rel="stylesheet" href="css/main.css">
+</head>
 
+<body>
 
-  </head>
-
-  <body cz-shortcut-listen="true">
-      
     <div class="nav">
-    <ul class="left-nav">
-    	<li><span class="dollar">$</span>( jorgerojas )</li>
-        
-    </ul> 
-    <ul class="right-nav">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Github</a></li>
-      
-    </ul>
-  
-  </div>
-      <div class="clear"></div>
+        <ul class="left-nav">
+            <li><span class="dollar">$</span>( "#jorgerojas" )</li>
 
+        </ul>
+        <ul id="right-nav" class="right-nav">
+            <li><a id="home-id" href="/home">Home</a>
 
-    
-      <div class="main">
-          <div class="block">
-             <h1>Hi I'm Jorge Rojas,</h1>
-        <h2>I Compile Pixels.</h2>
-              <p>var skills = (function(){</p>
-                  
-                  
-                  <p>())</p>
-          </div>
-       
+            </li>
+            <li><a id="portfolio-id" href="/portfolio">Portfolio</a>
+            </li>
+            <li><a id="about-id" href="/about">About</a>
+            </li>
+            <li><a id="contact-id" href="/contact">Contact Me</a>
+            </li>
+
+        </ul>
+
     </div>
-      
 
-    <script src="http://cdn.kendostatic.com/2013.3.1119/js/jquery.min.js"></script>
-    
-  
+    <div class="clear"></div>
 
-</body></html>
+    <div id="app"></div>
+    <!--Templates-->
+    <script id="home-id-template" class="home-id" type="render/template">
+        <div class="block">
+            <div class=git>
+                <h1>Hi I'm Jorge Rojas,</h1>
+            </div>
+            <h2>I Compile Pixels.</h2>
+
+        </div>
+
+    </script>
+
+    <script id="portfolio-id-template" class="portfolio-id" type="render/template">
+        <div class="block">
+            <h1>Portfolio</h1>
+        </div>
+
+    </script>
+
+    <script id="about-id-template" class="about-id" type="render/template">
+        <div class="block">
+            <h1>About</h1>
+        </div>
+
+    </script>
+
+    <script id="contact-id-template" class="contact-id" type="render/template">
+        <div class="block">
+            <h1>Contact Me</h1>
+        </div>
+
+    </script>
+
+    <script id="error-id-template" class="error-id" type="render/template">
+        <div class="block">
+            <h3>Error occured</h3>
+        </div>
+
+    </script>
+
+    <!--Scripts-->
+    <script src="js/4.Libraries/jquery.js"></script>
+    <script src="js/3.Core/portfolio-core.js"></script>
+    <script src="js/2.API/portfolio-api.js"></script>
+    <script src="js/1.Modules/portfolio.js"></script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

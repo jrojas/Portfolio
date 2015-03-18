@@ -1,113 +1,96 @@
 @import url("reset.css");
 @import url(http://fonts.googleapis.com/css?family=Varela+Round);
-
 /*Custom CSS Document */
-
 /*body styles*/
-body{
+
+body {
+    font-family: 'Varela Round', sans-serif;
+    color: #fff;
+    background-color: #fff;
+    height: 100%;
+}
+
+h1 {
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 58px;
+    margin-bottom: 20px;
+    letter-spacing: -3px;
+    color: #2C3E50;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 53px;
+    letter-spacing: -2px;
+}
+
+#app {
+    /* background-color:#D35400;*/
     
-font-family: 'Varela Round', sans-serif;
-color:#fff;
-background-color:#fff;
-height:100%;
-
+    background-color: #81CFE0;
+    height: 100%;
 }
-
-
-
-h1{
-	
-	font-size:58px;
-	font-style: normal;
-	font-weight:500;
-	line-height:58px;
-	margin-bottom:20px;
-	letter-spacing: -3px;
-    color:#2C3E50;
-}
-
-h2{
-	
-	
-	font-size:48px;
-	font-weight:bold;
-	line-height: 53px;
-	letter-spacing:-2px;
-    
-     
-     
-}
-   
-
-
-
-.main{
-    
-   /* background-color:#D35400;*/
-    background-color:#81CFE0;
-    height:460px;
-}
-
 /*Navigation Section*/
-.nav{
-	
-	width:auto;
-    height:105px;
-    padding-top:20px;
-    background:#2D2D2D;
-/*    background:#2C3E50;*/
-   
+
+.nav {
+    width: auto;
+    height: 150px;
+    background: #2D2D2D;
 }
 
-.nav li{
-
-	display:inline;
-	
-    
-    padding-right:20px;
-    
+.nav li {
+    display: inline;
+    padding-right: 20px;
 }
 
-.dollar{
-
-color:#81CFE0;
-
+.dollar {
+    color: #81CFE0;
 }
 
 .left-nav {
-	font-size:35px;
-	line-height:35px;
-	padding-top:20px;
-    padding-left:140px;
-	float:left;
+    font-size: 35px;
+    line-height: 35px;
+    padding-top: 75px;
+    padding-left: 140px;
+    float: left;
 }
 
-.right-nav{
-	
-	font-size:16px;
-    line-height:27px;
-    padding-top:20px;
-    padding-right:140px;
-	float:right;
-}
-a{
-	
-	color:#fff;
-	text-decoration:none;
-
+.right-nav {
+    font-size: 16px;
+    line-height: 27px;
+    padding-top: 75px;
+    padding-right: 140px;
+    float: right;
 }
 
-a:hover{
-	
-	color:#81CFE0;
-	
+a {
+    color: #fff;
+    text-decoration: none;
 }
 
+a:hover {
+    color: #81CFE0;
+}
 /*Layout Styles*/
 
 .block {
-width: 604px;
-    padding-top:2em;
+    width: 604px;
+    padding-top: 2em;
     padding-left: 7em;
+}
 
+.line-pre {
+    color: #2D2D2D;
+}
+
+.lowres {
+    width: 80px;
+    height: 80px;
+}
+
+h1 {
+    float: left;
 }
